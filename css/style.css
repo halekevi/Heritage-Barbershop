@@ -311,7 +311,7 @@ a:focus {
     object-fit: cover;
 }
 
-/*@media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
     .hero .hero-background {
         max-width: 1em;
         height: 1em;
@@ -321,17 +321,16 @@ a:focus {
 @media (max-width: 767.98px) {
     .hero .hero-background {
         width: 1em;
-        height: 1em;
+        height: 0.5em;
     }
 }
 
 @media (max-width: 575.98px) {
-    .hero {
+    .hero .hero-background {
         width: 1em;
-        height: 1em;
+        height: 0.15em;
     }
 }
-*/
 
 /*******************************/
 /******* Page Header CSS *******/
