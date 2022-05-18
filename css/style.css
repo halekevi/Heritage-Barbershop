@@ -292,14 +292,27 @@ a:focus {
 .hero {
     position: center;
     display: block;
-    max-width: 100vw;
-    height: 100vh;
+    max-width: 100%;
+    height: 100%;
     background: #D5B981;
     opacity: 1;
-    object-fit: contain;
-    /*border: 10px solid;*/
+    object-fit: contain; /*border: 10px solid;*/
 }
 
+#overlay {
+    position: relative; /* Sit on top of the page content */
+    display: flex; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.65); /* Black background with opacity */
+    color: white;
+    z-index: 19; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
 
 .hero img {
     position: center;
@@ -309,6 +322,7 @@ a:focus {
     padding-left: 12%;
     padding-right: 12%;
     object-fit: cover;
+    z-index: 50;
 }
 
 @media (max-width: 991.98px) {
